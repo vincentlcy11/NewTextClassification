@@ -41,5 +41,5 @@ for idx, (train_index, valid_index) in enumerate(skf.split(train_tfidf, train_df
 
 pred = pd.DataFrame()
 pred['label'] = test_pred.argmax(1)
-pred.to_csv('sumit.csv', index=None)
+pred.to_csv('submit2.0.csv', index=None)
 print("输出预测值完毕" + strftime("%Y-%m-%d %H:%M:%S", localtime()))
